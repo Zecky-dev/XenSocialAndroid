@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profileImage_IW"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/avatar_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"/>
+    <ImageButton
+        android:id="@+id/settings_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/settings_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/firstLastNameTW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/profileImage_IW"
+        app:layout_constraintBottom_toTopOf="@id/staticsLayout"
+        android:layout_marginTop="16dp"
+        android:text="First and Last Name"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"/>
+    <GridLayout
+        android:id="@+id/staticsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/firstLastNameTW"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        >
+        <TextView
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:drawableTop="@drawable/post_icon"
+            android:text="Posts"
+            android:gravity="center"
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:drawableTop="@drawable/like_icon"
+            android:text="Likes"
+            android:gravity="center"
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:drawableTop="@drawable/follower_icon"
+            android:text="Followers"
+            android:gravity="center"
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:id="@+id/postCount_TW"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:id="@+id/likeCount_TW"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:id="@+id/followerCount_TW"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="20sp">
+        </TextView>
+    </GridLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/smallPostList_RW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/staticsLayout"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

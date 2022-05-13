@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addImage_BTN"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostUploadActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/holderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/addPostTW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:gravity="center"
+            android:text="Add a post"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/postTitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/addPostTW"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="8dp"
+            android:padding="5dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:startIconDrawable="@drawable/post_icon">
+            <EditText
+                android:id="@+id/postTitleET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext_layout"
+                android:textSize="20sp"
+                android:hint="@string/post_title_et_hint"
+                android:inputType="text"
+                android:textStyle="bold"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/postImageIW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/postTitleLayout"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="8dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/postCommentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/postImageIW"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp"
+            android:padding="5dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            >
+
+            <EditText
+                android:id="@+id/postCommentET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext_layout"
+                android:textSize="16sp"
+                android:inputType="textMultiLine"
+                android:minLines="4"
+                android:maxLines="8"
+                android:gravity="start"
+                android:hint="@string/post_comment_et_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <GridLayout
+            android:id="@+id/optionalButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1"
+            app:layout_constraintTop_toBottomOf="@id/postCommentLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingHorizontal="8dp"
+            android:layout_marginTop="16dp"
+            >
+
+        <Button
+            android:id="@+id/addLocationBTN"
+            android:text="@string/add_location_btn_text"
+            android:drawableLeft="@drawable/location_marker"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            />
+
+            <Button
+                android:id="@+id/addPostImageBTN"
+                android:text="@string/add_image_btn_text"
+                android:drawableLeft="@drawable/image_icon"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center_vertical"/>
+        </GridLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/optionalButtonsLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginHorizontal="5dp"
+            android:text="@string/share_post_btn_text"
+            android:layout_marginTop="16dp"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

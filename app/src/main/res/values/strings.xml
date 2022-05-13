@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">XenSocial</string>
+    <string name="signUp_btn_title">Sign Up</string>
+    <string name="email_address_hint">E-mail Address</string>
+    <string name="password_hint">Password</string>
+    <string name="select_birth_date_text">Select Birth Date</string>
+    <string name="birth_date_day_text">Day</string>
+    <string name="birth_date_month_text">Month</string>
+    <string name="birth_date_year_text">Year</string>
+    <string name="counter_default_number">0</string>
+    <string name="select_gender_btn_text">Select Gender</string>
+    <string name="change_password_text">Change Password</string>
+    <string name="save_changes_text">Save Changes</string>
+    <string name="share_post_btn_text">Share post</string>
+    <string name="add_image_btn_text">Add image</string>
+    <string name="add_location_btn_text">Add location</string>
+    <string name="post_comment_et_hint">Post comment</string>
+    <string name="post_title_et_hint">Post title</string>
+    <string-array name="genders">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+</resources>
