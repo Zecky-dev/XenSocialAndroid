@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/XenSocial.iml" filepath="$PROJECT_DIR$/.idea/modules/XenSocial.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/XenSocial.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/XenSocial.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/XenSocial.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/XenSocial.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/XenSocial.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/XenSocial.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/XenSocial.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/XenSocial.app.unitTest.iml" />
     </modules>
   </component>
 </project>
