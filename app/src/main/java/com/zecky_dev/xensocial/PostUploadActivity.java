@@ -125,7 +125,7 @@ public class PostUploadActivity extends AppCompatActivity {
                 return false;
             }
             else{
-                // request permissions
+                // request permissionss
             }
         }
         else{
