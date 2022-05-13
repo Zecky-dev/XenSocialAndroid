@@ -1,2 +1,7 @@
 *.json
+.idea/
+.gradle/
+*.iml
+build/
+local.properties
 
