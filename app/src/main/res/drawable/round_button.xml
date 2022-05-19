@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+    <gradient android:startColor="@color/action_bar_red"
+               android:endColor="@color/top_action_bar_red"/>
+</shape>

@@ -307,6 +307,7 @@ public class PostUploadActivity extends AppCompatActivity {
                 });
             }
             else{
+                postInfo.put("PostImageURL",null);
                 firebaseFirestore.collection("post_info").document(postID.toString()).set(postInfo)
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
