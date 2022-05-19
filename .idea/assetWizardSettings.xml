@@ -299,7 +299,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../AppData/Local/Android/Sdk/icons/material/materialicons/refresh/baseline_refresh_24.xml" />
+                                      <entry key="url" value="jar:file:/opt/android-studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/delete/baseline_delete_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -310,8 +310,8 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="new_password_again_icon" />
-                            <entry key="sourceFile" value="C:\Users\zkcnd\XenSocial" />
+                            <entry key="outputName" value="delete_icon" />
+                            <entry key="sourceFile" value="$APPLICATION_HOME_DIR$/bin/C:\Users\zkcnd\XenSocial" />
                           </map>
                         </option>
                       </PersistentState>
