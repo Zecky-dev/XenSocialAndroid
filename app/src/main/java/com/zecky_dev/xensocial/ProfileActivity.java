@@ -46,7 +46,7 @@ public class ProfileActivity extends AppCompatActivity {
                         userProfilePictureURL = (String)document.get("ProfilePictureURL");
                         userFirstName = (String) document.get("FirstName");
                         userLastName = (String) document.get("LastName");
-                        Picasso.get().load(userProfilePictureURL).into(binding.profileImageIW);
+                        Picasso.get().load(userProfilePictureURL).placeholder(R.drawable.progress_animation).into(binding.profileImageIW);
                         binding.firstLastNameTW.setText(userFirstName + " " + userLastName);
                      }
                     else{

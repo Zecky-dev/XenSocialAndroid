@@ -26,7 +26,9 @@
         <entry key="..\:/Users/zkcnd/XenSocial/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.233" />
         <entry key="..\:/Users/zkcnd/XenSocial/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.233" />
         <entry key="app/src/main/res/drawable/custom_progressbar.xml" value="0.111" />
+        <entry key="app/src/main/res/drawable/progress_animation.xml" value="0.117" />
         <entry key="app/src/main/res/layout/activity_post_upload.xml" value="0.27445652173913043" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.35625" />
       </map>
     </option>
   </component>

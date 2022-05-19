@@ -468,7 +468,8 @@ public class EditSignupActivity extends AppCompatActivity {
         imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
-                Picasso.get().load(uri).into(binding.selectImageIW);
+                //Picasso.get().load(uri).into(binding.selectImageIW);
+                Picasso.get().load(uri).placeholder(R.drawable.progress_animation).into(binding.selectImageIW);
             }
         });
         DocumentReference docRef = mFirebaseFireStore
